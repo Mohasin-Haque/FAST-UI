@@ -1,0 +1,134 @@
+:root{
+    /* defining varibles */
+    --primary-color: #ff3b30;  /*#fca5a5*/
+    --secondary-color:#fff6ea; 
+    --action: #3b82f6;
+    --grey: #9a9a9a;
+    --black: #2b2b2b;
+    --white: #ffffff;
+    --lynx-white: #f7f7f7;
+    --violet: #2348c7;
+    --lynx-gray: #c5c5c5;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--lynx-gray);
+}
+
+.small-text{
+    font-size: .6rem;
+    font-weight: 500;
+}
+
+.nav{
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.nav:hover{
+    color: var(--primary-color);
+}
+
+marquee{
+    margin-top: 10px;
+    background-color: var(--grey);
+    color: var(--primary-color);
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 2rem;
+}
+
+.section{
+    margin: 6rem;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 3rem;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 2rem;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.btn{
+    border: none;
+    background: transparent;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.btn-primary{
+    
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-primary:hover{
+    
+    background-color: var(--primary-color);
+    color: var(--lynx-white);
+}
+
+.btn-secondary{
+    background-color: var(--primary-color);
+    color: var(--lynx-white);
+}
+
+.btn-secondary:hover{
+    background-color: #ef4444;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    color: var(--lynx-white);
+    position:absolute;
+    bottom:0;
+    width:100%;
+    min-height: 5rem;
+}
+
+.author{
+    color: var(--primary-color);
+}
