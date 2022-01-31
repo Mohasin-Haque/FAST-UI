@@ -1,14 +1,18 @@
+/**** External Imports *****/
+
+@import "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css";
+
+/***** Defining Color Varibles *****/
 :root {
-  /* defining varibles */
-  --primary-color: #ff3b30; /*#fca5a5*/
+  --primary-color: #ff3b30;
   --secondary-color: #fff6ea;
-  --action: #3b82f6;
-  --grey: #9a9a9a;
-  --black: #2b2b2b;
-  --white: #ffffff;
-  --lynx-white: #f7f7f7;
-  --violet: #2348c7;
-  --lynx-gray: #c5c5c5;
+  --text-color-black: #2b2b2b;
+  --body-background-color: #ffffff;
+  --dark-white: #f7f7f7;
+  --item-background-color: #c5c5c5;
+  --hover-color: #ef4444;
+  --box-shadow-down: 0px 0px 10px 4px rgb(0 0 0 / 5%);
+  --box-shadow-up: 0px -4px 10px rgb(0 0 0 / 5%);
 }
 
 * {
@@ -22,22 +26,30 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: var(--white);
-  color: var(--black);
-  box-shadow: 0px 0px 10px 4px rgb(0 0 0 / 5%);
+  background-color: var(--body-background-color);
+  color: var(--text-color-black);
+  box-shadow: var(--box-shadow-down);
 }
 
 .small-text {
   font-size: 0.6rem;
   font-weight: 500;
-  color: var(--black);
+  color: var(--text-color-black);
 }
 
 .nav {
   text-decoration: none;
   font-size: 1.4rem;
   font-weight: 500;
-  color: var(--black);
+  color: var(--text-color-black);
+}
+
+.nav-logo{
+  color: var(--primary-color);
+}
+
+.right-nav-active{
+  color: var(--primary-color);
 }
 
 .nav:hover {
@@ -53,9 +65,8 @@
 }
 
 .section {
-  /* margin: 6rem; */
   margin-top: 6rem;
-  color: var(--black);
+  color: var(--text-color-black);
 }
 
 .section-main {
@@ -64,7 +75,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  border: #ef4444;
+  border: var(--hover-color);
 }
 
 .container {
@@ -73,24 +84,6 @@
   align-items: center;
   flex-wrap: wrap;
   font-size: 3rem;
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    font-size: 2rem;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .container {
-    font-size: 1.6rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .container {
-    font-size: 1.2rem;
-  }
 }
 
 .about {
@@ -128,16 +121,16 @@
 
 .btn-primary:hover {
   background-color: var(--primary-color);
-  color: var(--lynx-white);
+  color: var(--dark-white);
 }
 
 .btn-secondary {
   background-color: var(--primary-color);
-  color: var(--lynx-white);
+  color: var(--dark-white);
 }
 
 .btn-secondary:hover {
-  background-color: #ef4444;
+  background-color: var(--hover-color);
 }
 
 .footer {
@@ -145,9 +138,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--white);
-  color: var(--black);
-  box-shadow: 0px -4px 10px rgb(0 0 0 / 5%);
+  background-color: var(--body-background-color);
+  color: var(--text-color-black);
+  box-shadow: var(--box-shadow-up);
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -169,7 +162,7 @@
 
 .bi {
   padding: 1rem;
-  color: var(--black);
+  color: var(--text-color-black);
 }
 
 .bi:hover {
@@ -179,7 +172,7 @@
 /* Documentation  CSS*/
 
 .main-container {
-  background-color: var(--lynx-white);
+  background-color: var(--dark-white);
   width: 15rem;
 }
 
@@ -187,7 +180,7 @@
   padding: 1rem;
   font-size: 1.5rem;
   font-weight: 500;
-  border-bottom: 1px solid var(--black);
+  border-bottom: 1px solid var(--text-color-black);
 }
 
 .items {
@@ -206,17 +199,17 @@
 .item {
   padding: 1rem;
   text-decoration: none;
-  color: var(--black);
+  color: var(--text-color-black);
 }
 
 .item:hover {
   color: var(--primary-color);
-  background-color: var(--lynx-gray);
+  background-color: var(--item-background-color);
 }
 
 .item:focus {
   color: var(--primary-color);
-  background-color: var(--lynx-gray);
+  background-color: var(--item-background-color);
 }
 
 /* Installation CSS */
@@ -225,6 +218,26 @@
   width: 100%;
   height: 300px;
   padding: 1.5rem 0;
-  background-color: var(--lynx-white);
+  background-color: var(--dark-white);
   overflow: auto;
+}
+
+/******* Adding Media Queries ******/
+
+@media screen and (max-width: 768px) {
+  .container {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    font-size: 1.2rem;
+  }
 }
