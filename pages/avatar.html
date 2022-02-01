@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author-avatar" content="Mohasin Haque" />
+    <meta name="description" content="Get the avatars for your projects just in one click!!" />
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>Avatar | FAST UI</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="left-nav">
+                <a href="../index.html" class="nav nav-logo">FAST UI</a>
+                <span class="small-text">V 1.0</span>
+            </div>
+            <div class="right-nav">
+                <ul class="list">
+                    <li><a href="../index.html" class="nav nav-pills">Home</a></li>
+                    <li><a href="./avatar.html" class="nav right-nav-active nav-pills">Documentation</a></li>
+                    <li><a href="./installation.html" class="nav nav-pills">Installation</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="sidebar">
+        <div class="container-text">
+            <p class="subtext">Components</p>
+        </div>
+        <div class="items">
+            <a href="./avatar.html" class="item">Avatar</a>
+            <a href="./item.html" class="item">Alert</a>
+            <a href="./badge.html" class="item">Badges</a>
+            <a href="./button.html" class="item">Button</a>
+            <a href="./card.html" class="item">Card</a>
+            <a href="./image.html" class="item">Image</a>
+            <a href="./input.html" class="item">Input</a>
+        </div>
+    </div>
+    <div class="main-container-components">
+        <h2 class="heading">Avatar</h2>
+        <p class="description">Avatars are user profile pictures, usually found in circular shapes. Avatars can be used
+            for 'container' objects — projects, spaces, repositories, etc. — to give them a recognisable visual
+            identity.</p>
+        <h3 class="heading heading-avatar">Size variants avatar</h3>
+        <p class="description description-avatar">You can use image in Avatar. You need to include class <span
+                class="author">avatar</span> and for size add class according to size <span class="author">avatar-lg,
+                avatar-md, avatar-sm, avatar-xs (e.g. class="avatar avatar-lg") </span>as shown below. </p>
+        <iframe class="code-snippet-display"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%252F%252F%2520For%2520large%2520size%2520avatar%2520%250A%2509%253Cimg%2520class%253D%2522avatar%2520avatar-lg%2522%2520src%253D%2522..%252Fimages%252Favatar.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%252F%252F%2520For%2520medium%2520size%2520avatar%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-md%2522%2520src%253D%2522..%252Fimages%252Favatar.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%252F%252F%2520For%2520small%2520size%2520avatar%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-sm%2522%2520src%253D%2522..%252Fimages%252Favatar.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%252F%252F%2520For%2520extra%2520small%2520size%2520avatar%250A%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-xs%2522%2520src%253D%2522..%252Fimages%252Favatar.jpg%2522%2520alt%253D%2522avatar%2522%253E"
+            style="border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <div class="avatar-container">
+            <img class="avatar avatar-lg" src="../images/avatar.jpg" alt="avatar">
+            <img class="avatar avatar-md" src="../images/avatar.jpg" alt="avatar">
+            <img class="avatar avatar-sm" src="../images/avatar.jpg" alt="avatar">
+            <img class="avatar avatar-xs" src="../images/avatar.jpg" alt="avatar">
+        </div>
+        <h3 class="heading heading-avatar">Same size avatar</h3>
+        <p class="description description-avatar">To use same size of avatars, you need to include class <span
+                class="author">avatar</span>, inside the img tag.</p>
+        <iframe class="code-snippet-display"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=one-light&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%252F%252F%2520For%2520same%2520size%2520avatar%2520%250A%253Cimg%2520class%253D%2522avatar%2522%2520src%253D%2522..%252Fimages%252Favatar.jpg%2522%2520alt%253D%2522avatar%2522%253E"
+            style="border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <div class="avatar-container">
+            <img class="avatar" src="../images/avatar.jpg" alt="avatar">
+            <img class="avatar" src="../images/avatar.jpg" alt="avatar">
+            <img class="avatar" src="../images/avatar.jpg" alt="avatar">
+            <img class="avatar" src="../images/avatar.jpg" alt="avatar">
+        </div>
+        <h3 class="heading heading-avatar">Avatar with status</h3>
+        <p class="description description-avatar">To show the status of avatar, you need to include class <span
+                class="author">avatar</span> for avatar in img tag and class <span class="author">status</span> for
+                status in saprate add class according to status <span class="author">status-online, status-busy, status-dnd,
+                status-idle (e.g. class="status status-online")</span> inside the img tag.</p>
+        <iframe class="code-snippet-display"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=one-light&wt=none&l=application%2Fjson&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%252F%252F%2520For%2520avatar%2520%250A%253Cimg%2520class%253D%2522avatar%2522%2520src%253D%2522..%252Fimages%252Favatar.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%252F%252F%2520******%2520For%2520status%2520badges%2520*******%252F%252F%250A%252F%252F%2520For%2520status%2520when%2520online%250A%253Cdiv%2520class%253D%2522status%2520status-online%2522%253E%253C%252Fdiv%253E%250A%252F%252F%2520For%2520status%2520when%2520busy%250A%253Cdiv%2520class%253D%2522status%2520status-busy%2522%253E%253C%252Fdiv%253E%250A%252F%252F%2520For%2520status%2520when%2520do%2520not%2520disturb%250A%253Cdiv%2520class%253D%2522status%2520status-dnd%2522%253E%253C%252Fdiv%253E%250A%252F%252F%2520For%2520status%2520when%2520idle%250A%253Cdiv%2520class%253D%2522status%2520status-idle%2522%253E%253C%252Fdiv%253E%250A%250A"
+            style="border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <div class="avatar-container">
+            <div class="container">
+                <img class="avatar" src="../images/avatar.jpg" alt="avatar">
+                <div class="status status-online"></div>
+            </div>
+            <div class="container">
+                <img class="avatar" src="../images/avatar.jpg" alt="avatar">
+                <div class="status status-busy"></div>
+            </div>
+            <div class="container">
+                <img class="avatar" src="../images/avatar.jpg" alt="avatar">
+                <div class="status status-dnd"></div>
+            </div>
+            <div class="container">
+                <img class="avatar" src="../images/avatar.jpg" alt="avatar">
+                <div class="status status-idle"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
