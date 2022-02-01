@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohasin Haque" />
+    <meta name="description" content="Get some cool badges for your project here." />
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>Badge Component</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="left-nav">
+                <a href="../index.html" class="nav nav-logo">FAST UI</a>
+                <span class="small-text">V 1.0</span>
+            </div>
+            <div class="right-nav">
+                <ul class="list">
+                    <li><a href="../index.html" class="nav nav-pills">Home</a></li>
+                    <li><a href="./avatar.html" class="nav right-nav-active nav-pills">Documentation</a></li>
+                    <li><a href="./installation.html" class="nav nav-pills">Installation</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="sidebar">
+        <div class="container-text">
+            <p class="subtext">Components</p>
+        </div>
+        <div class="items">
+            <a href="./avatar.html" class="item">Avatar</a>
+            <a href="./item.html" class="item">Alert</a>
+            <a href="./badge.html" class="item">Badges</a>
+            <a href="./button.html" class="item">Button</a>
+            <a href="./card.html" class="item">Card</a>
+            <a href="./image.html" class="item">Image</a>
+            <a href="./input.html" class="item">Input</a>
+        </div>
+    </div>
+    <div class="main-container-components">
+        <h2 class="heading">Badges</h2>
+        <p class="description">Badges are ussually used to display the notification count or status information. It may
+            be positioned top-right or bottom-right of the image/icon.</p>
+        <h3 class="heading heading-avatar">Number Badges</h3>
+        <p class="description description-avatar">You can use badges on texts, buttons and icons. You need to include
+            class <span class="author">badge</span> and for size and position, add class according to size <span
+                class="author">badge-small, badge-large, badge-left, badge-toggle and badge-icon (e.g. class="badge
+                badge-small") </span>as shown below. </p>
+        <div class="badge_container-main flex-center">
+            <iframe class="code-snippet-display"
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=one-light&wt=none&l=application%2Fjson&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520Text%2520with%2520a%2520small%2520badge%2520--%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge_container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text_with_badge%2522%253EText%2520with%2520a%2520badge%253Cspan%2520class%253D%2522badge%2520badge-small%2522%253E4%253C%252Fspan%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%250A"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+            <!-- Text with a small badge -->
+            <div class="badge_container">
+                <div class="text_with_badge flex-center">Text with a badge<span class="badge badge-small">4</span></div>
+            </div>
+            <iframe class="code-snippet-display"
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=one-light&wt=none&l=application%2Fjson&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520Text%2520with%2520a%2520large%2520Badge%2520--%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge_container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text_with_badge%2522%253EText%2520with%2520a%2520large%2520badge%253Cspan%2520class%253D%2522%2520badge%2520badge-large%2522%253E1%253C%252Fspan%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+            <!-- Text with a large Badge -->
+            <div class="badge_container">
+                <div class="text_with_badge flex-center">Text with a large badge<span class="badge badge-large">1</span></div>
+            </div>
+            <iframe class="code-snippet-display"
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=one-light&wt=none&l=application%2Fjson&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520Button%2520with%2520badge%2520on%2520left%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge_container-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522content%2522%253EButton%2520with%2520a%2520badge%2520on%2520the%2520left%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn_and_badge%2522%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-badge%2520btn-left-badge%2522%253EAction%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-left%2522%253E8%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+            <!-- Button with badge on left -->
+            <div class="badge_container-btn flex-center">
+                <div class="content">Button with a badge on the left. . .</div>
+                <div class="btn_and_badge flex-center">
+                    <button class="btn-badge btn-left-badge">Action</button>
+                    <span class="badge badge-left">8</span>
+                </div>
+            </div>
+            <iframe class="code-snippet-display"
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=one-light&wt=none&l=application%2Fjson&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520Button%2520toggles%2520badge%2520visibility%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge_container-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522content%2522%253EButton%2520toggl%2520badge%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn_and_badge-toggle%2522%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-badge%2520btn-toggle-badge%2522%253EHide%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-toggle%2522%253E7%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+            <!-- Button toggles badge visibility -->
+            <div class="badge_container-btn flex-center">
+                <div class="content">Button toggles badge visibility . .</div>
+                <div class="btn_and_badge-toggle flex-center">
+                    <button class="btn-badge btn-toggle-badge">Hide</button>
+                    <span class="badge badge-toggle">7</span>
+                </div>
+            </div>
+            <iframe class="code-snippet-display"
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=one-light&wt=none&l=application%2Fjson&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520Icon%2520with%2520a%2520badge%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge_container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text_with_badge%2522%253EIcon%2520with%2520a%2520badge%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon%2522%253E%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-icon%2522%253E4%253C%252Fspan%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+            <!-- Icon with a badge -->
+            <div class="badge_container">
+                <div class="text_with_badge flex-center">Icon with a badge . .
+                    <div class="icon"><i class="bi bi-house-door-fill home-icon"></i></div>
+                    <span class="badge badge-icon">4</span></div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

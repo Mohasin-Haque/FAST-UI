@@ -1,0 +1,89 @@
+.main-container-components {
+  margin-left: 15rem;
+}
+
+.container-text {
+  width: 15rem;
+}
+
+.heading {
+  margin-left: 1rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.description {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.heading-avatar {
+  font-size: 2rem;
+}
+
+.description-avatar {
+  font-size: 1.1rem;
+}
+
+.avatar-container {
+  background-color: var(--body-background-color);
+  max-width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.avatar {
+  border-radius: 50%;
+  height: 3.1rem;
+  width: 3.1rem;
+}
+
+.avatar-lg {
+  height: 6rem;
+  width: 6rem;
+}
+
+.avatar-md {
+  height: 4.6rem;
+  width: 4.6rem;
+}
+
+.avatar-sm {
+  height: 3.1rem;
+  width: 3.1rem;
+}
+
+.avatar-xs {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.status {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-left: auto;
+  position: relative;
+  bottom: -1rem;
+  left: -1rem;
+}
+
+.status-online {
+  background-color: var(--status-online);
+}
+
+.status-busy {
+  background-color: var(--status-busy);
+}
+
+.status-dnd {
+  background-color: var(--status-dnd);
+}
+
+.status-idle {
+  background-color: var(--status-idle);
+}

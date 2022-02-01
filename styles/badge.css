@@ -1,0 +1,110 @@
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.badge_container-main {
+  /* display: flex; */
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  margin: 1rem;
+}
+
+.text_with_badge {
+  /* display: flex; for centering text */
+  /* align-items: center; */
+  margin: 1rem;
+}
+
+.badge {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: var(--status-busy);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark-white);
+  border-radius: 50%;
+  position: relative;
+  bottom: 10px;
+}
+
+.badge-small {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.badge-large {
+  height: 2rem;
+  width: 2rem;
+  right: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.badge_container-btn {
+  /* display: flex; */
+  /* align-items: center; */
+  margin: 1rem;
+}
+
+.btn-badge {
+  background-color: var(--status-busy);
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn-left-badge {
+  border-radius: 5px;
+  color: var(--seconadary-color);
+  position: relative;
+}
+
+.badge-left {
+  background-color: var(--primary-color);
+  position: relative;
+  bottom: 1rem;
+  right: 5.5rem;
+}
+
+.btn_and_badge {
+  padding: 1rem;
+  /* display: flex; */
+
+  /* align-items: center; */
+}
+
+/* btn with toggle */
+
+/* .btn_and_badge-toggle {
+  display: flex;
+  align-items: center;
+} */
+
+.btn-toggle-badge {
+  background-color: var(--item-background-color);
+  color: var(--text-color-black);
+  position: relative;
+}
+
+.badge-toggle {
+  position: relative;
+  bottom: 1.1rem;
+  right: 15px;
+}
+
+/* Icon with badge */
+
+.icon {
+  font-size: 22px;
+}
+
+.badge-icon {
+  position: relative;
+  bottom: 10px;
+  right: 25px;
+}
