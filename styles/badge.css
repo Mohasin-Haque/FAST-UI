@@ -1,14 +1,19 @@
-.badge_container-main {
+.flex-center {
   display: flex;
-  flex-direction: column;
   align-items: center;
+}
+
+.badge_container-main {
+  /* display: flex; */
+  flex-direction: column;
+  /* align-items: center; */
   justify-content: center;
   margin: 1rem;
 }
 
 .text_with_badge {
-  display: flex; /*for centering text*/
-  align-items: center;
+  /* display: flex; for centering text */
+  /* align-items: center; */
   margin: 1rem;
 }
 
@@ -39,8 +44,8 @@
 }
 
 .badge_container-btn {
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
   margin: 1rem;
 }
 
@@ -67,20 +72,21 @@
 }
 
 .btn_and_badge {
-  display: flex;
   padding: 1rem;
-  align-items: center;
+  /* display: flex; */
+
+  /* align-items: center; */
 }
 
 /* btn with toggle */
 
-.btn_and_badge-toggle {
+/* .btn_and_badge-toggle {
   display: flex;
   align-items: center;
-}
+} */
 
 .btn-toggle-badge {
-  background-color: var(--seconadary-color);
+  background-color: var(--item-background-color);
   color: var(--text-color-black);
   position: relative;
 }
