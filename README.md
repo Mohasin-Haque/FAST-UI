@@ -15,4 +15,4 @@ Copy the link from the installation section and paste in your head tag of html f
  * HTML
  * CSS  
 
-### Show some love by starring this repository.
+### Show some love by starring this repository. Also follow me.
