@@ -38,38 +38,38 @@
 
 .avatar {
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
+  height: 3.1rem;
+  width: 3.1rem;
 }
 
 .avatar-lg {
-  height: 100px;
-  width: 100px;
+  height: 6rem;
+  width: 6rem;
 }
 
 .avatar-md {
-  height: 75px;
-  width: 75px;
+  height: 4.6rem;
+  width: 4.6rem;
 }
 
 .avatar-sm {
-  height: 50px;
-  width: 50px;
+  height: 3.1rem;
+  width: 3.1rem;
 }
 
 .avatar-xs {
-  height: 25px;
-  width: 25px;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .status {
-  height: 15px;
-  width: 15px;
+  height: 1rem;
+  width: 1rem;
   border-radius: 50%;
   margin-left: auto;
   position: relative;
-  bottom: -15px;
-  left: -15px;
+  bottom: -1rem;
+  left: -1rem;
 }
 
 .status-online {
