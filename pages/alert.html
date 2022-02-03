@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Mohasin Haque">
     <meta name="description" content="Choose the alert box of your type and give your project a trendy look.">
-    <link rel="icon" href="https://img.icons8.com/ios-glyphs/50/000000/fast-track.png" />
     <link rel="stylesheet" href="../styles/main.css">
     <title>Alert | FAST UI</title>
 </head>
@@ -28,7 +27,7 @@
             </div>
         </nav>
     </header>
-    <div class="sidebar">
+    <div class="main-container">
         <div class="items">
             <p class="subtext">Components</p>
             <a href="./avatar.html" class="item">Avatar</a>
@@ -36,246 +35,32 @@
             <a href="./badge.html" class="item">Badges</a>
             <a href="./button.html" class="item">Button</a>
             <a href="./card.html" class="item">Card</a>
+            <a href="./dialogue.html" class="item">Dialogue</a>
             <a href="./image.html" class="item">Image</a>
             <a href="./input.html" class="item">Input</a>
         </div>
     </div>
     <div class="main-container-components">
         <h2 class="heading">Alert</h2>
-        <p class="description">An alert displays a short, important message in a way that attracts the user's attention
-            without interrupting the user's task.</p>
-        <h3 class="heading heading-avatar"> Alert box with description</h3>
-        <p class="description description-avatar">You can use description in Alert boxes. You need to include class
-            <span class="author">alert-description</span> and for buttons add <span
-                class="author">alert-buttons</span>as shown below. </p>
+        <p class="description">Alerts are urgent interruptions, requiring acknowledgement, that inform the user about a
+            situation. Most alerts don't need titles. They summarize a decision in a sentence or two by either: <br>
+            * Asking a question (e.g. "Delete this conversation?") <br>
+            * Making a statement related to the action buttons</p>
+        <h3 class="heading heading-avatar">Standard Alerts</h3>
+        <p class="description description-avatar">You can use the following alerts. You need to include
+            class <span class="author">alert</span> and for partcular alert add class according to alert type <span
+                class="author">alert-success, alert-danger, alert-warning and alert-info (e.g. class="alert
+                alert-success") </span>as shown below. </p>
         <iframe class="code-snippet-display"
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=base16-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=82px&dsblur=100px&wc=true&wa=true&pv=27px&ph=22px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522flex-center%2520alert-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522alert-heading%2522%253EDo%2520you%2520want%2520to%2520Exit%253F%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522alert-description%2522%253EPlease%2520confirm%2520that%2520you%2520really%2520want%2520to%2520exit%2520from%2520this%2520wonderfull%2520app.%2520Lorem%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520ipsum%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Soluta%252C%2520ipsam.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522alert-button%2520alert-button-yes%2522%253EYes%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522alert-button%2520alert-button-no%2522%253ENo%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=base16-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=82px&dsblur=100px&wc=true&wa=true&pv=27px&ph=22px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2520%2520%253C%21--%2520Alert%2520Varients%2520--%253E%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253EA%2520simple%2520success%2520alert.%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253EA%2520simple%2520danger%2520alert.%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253EA%2520simple%2520warning%2520alert.%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-info%2522%253EA%2520simple%2520info%2520alert.%253C%252Fdiv%253E"
             sandbox="allow-scripts allow-same-origin">
         </iframe>
-        <!-- ALERT BOXES -->
-        <!-- Alert box with description -->
-        <div class="flex-center alert-center">
-            <div class="flex-center alert-container">
-                <div class="alert-content">
-                    <h3 class="alert-heading">Do you want to Exit?</h3>
-                    <p class="alert-description">Please confirm that you really want to exit from this wonderful app.
-                        Also note that your current progress will be lost and you will be reset.</p>
-                </div>
-                <div class="alert-buttons">
-                    <button class="alert-button alert-button-yes">Yes</button>
-                    <button class="alert-button alert-button-no">No</button>
-                </div>
-            </div>
+        <div class="badge_container-main flex-center">
+            <div class="alert alert-success">A simple success alert.</div>
+            <div class="alert alert-danger">A simple danger alert.</div>
+            <div class="alert alert-warning">A simple warning alert.</div>
+            <div class="alert alert-info">A simple info alert.</div>
         </div>
-        <!--Alert box with title -->
-        <h3 class="heading heading-avatar"> Alert box with title</h3>
-        <p class="description description-avatar"> You can use an alert box only with title. You need to include class
-            <span class="author"> alert-heading</span> and for buttons add <span class="author"> alert-buttons</span>as
-            shown below. </p>
-        <iframe class="code-snippet-display"
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=base16-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=82px&dsblur=100px&wc=true&wa=true&pv=27px&ph=22px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--Alert%2520box%2520with%2520title%2520--%253E%250A%253Cdiv%2520class%253D%2522flex-center%2520alert-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522alert-heading%2522%253EDo%2520you%2520want%2520to%2520Exit%253F%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522alert-description%2522%253EDialogue%2520body%2520text%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522alert-button%2520alert-button-yes%2522%253EYes%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522alert-button%2520alert-button-no%2522%253ENo%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
-            sandbox="allow-scripts allow-same-origin">
-        </iframe>
-        <div class="flex-center alert-center">
-            <div class="flex-center">
-                <div class="alert-container">
-                    <div class="alert-content">
-                        <h3 class="alert-heading">Do you want to Exit?</h3>
-                        <p class="alert-description">Dialogue body text</p>
-                    </div>
-                    <div class="alert-buttons">
-                        <button class="alert-button alert-button-yes">Yes</button>
-                        <button class="alert-button alert-button-no">No</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Alert without title -->
-
-        <h3 class="heading heading-avatar"> Alert box without title</h3>
-        <p class="description description-avatar"> You can use an alert box without tilte also. You need to include
-            class
-            <span class="author"> alert-content </span> and for buttons add <span class="author"> alert-buttons </span>
-            as
-            shown below. </p>
-        <iframe class="code-snippet-display"
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=base16-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=82px&dsblur=100px&wc=true&wa=true&pv=27px&ph=22px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520Alert%2520without%2520title%2520--%253E%250A%253Cdiv%2520class%253D%2522flex-center%2520alert-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-content%2522%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522alert-description%2522%253EDialogue%2520body%2520text%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522alert-button%2520alert-button-yes%2522%253EYes%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522alert-button%2520alert-button-no%2522%253ENo%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
-            sandbox="allow-scripts allow-same-origin">
-        </iframe>
-        <div class="flex-center alert-center">
-            <div class="flex-center">
-                <div class="alert-container">
-                    <div class="alert-content">
-                        <p class="alert-description">Dialogue body text</p>
-                    </div>
-                    <div class="alert-buttons">
-                        <button class="alert-button alert-button-yes">Yes</button>
-                        <button class="alert-button alert-button-no">No</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Alert with title - Stacked -->
-
-        <h3 class="heading heading-avatar"> Alert box with stacked buttons</h3>
-        <p class="description description-avatar"> You can use an alert box without title and with stacked button also.
-            You need to include
-            class
-            <span class="author"> alert-content </span> and for buttons add <span class="author"> alert-buttons-stacked
-            </span>
-            as
-            shown below. </p>
-        <iframe class="code-snippet-display"
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=base16-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=82px&dsblur=100px&wc=true&wa=true&pv=27px&ph=22px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520Alert%2520without%2520title%2520and%2520with%2520stacked%2520buttons%2520--%253E%250A%2520%253Cdiv%2520class%253D%2522flex-center%2520alert-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522alert-description%2522%253EDialogue%2520body%2520text%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-buttons%2520alert-buttons-stacked%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522alert-button%2520alert-button-yes%2522%253EYes%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522alert-button%2520alert-button-no%2522%253ENo%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
-            sandbox="allow-scripts allow-same-origin">
-        </iframe>
-        <div class="flex-center alert-center">
-            <div class="flex-center">
-                <div class="alert-container">
-                    <div class="alert-content">
-                        <p class="alert-description">Dialogue body text</p>
-                    </div>
-                    <div class="alert-buttons alert-buttons-stacked">
-                        <button class="alert-button alert-button-yes">Yes</button>
-                        <button class="alert-button alert-button-no">No</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Simple Dialogue Box -->
-
-        <h3 class="heading heading-avatar"> Alert box with items</h3>
-        <p class="description description-avatar"> You can use an alert box with stacked items also. These type of
-            alerts are useful in forms. You need to include class
-            <span class="author"> alert-items</span> and for particular item add <span class="author"> alert-item
-            </span>
-            as
-            shown below. </p>
-        <iframe class="code-snippet-display"
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=base16-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=82px&dsblur=100px&wc=true&wa=true&pv=27px&ph=22px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520Alert%2520box%2520with%2520stacked%2520items%2520--%253E%250A%2520%2520%253Cdiv%2520class%253D%2522flex-center%2520alert-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522alert-heading%2522%253EChoose%2520from%2520the%2520items%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522alert-items%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522alert-item%2520alert-item-one%2522%253E%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253E%2520Item%25201%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522alert-item%2520alert-item-two%2522%253E%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253E%2520Item%25202%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522alert-item%2520alert-item-three%2522%253E%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253E%2520Item%25203%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
-            sandbox="allow-scripts allow-same-origin">
-        </iframe>
-        <div class="flex-center alert-center">
-            <div class="flex-center">
-                <div class="alert-container">
-                    <div class="alert-content">
-                        <h3 class="alert-heading">Choose from the items</h3>
-                    </div>
-                    <ul class="alert-items">
-                        <li class="alert-item alert-item-one"><i class="bi bi-house-door-fill home-icon"></i> Item 1
-                        </li>
-                        <li class="alert-item alert-item-two"><i class="bi bi-house-door-fill home-icon"></i> Item 2
-                        </li>
-                        <li class="alert-item alert-item-three"><i class="bi bi-house-door-fill home-icon"></i> Item 3
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Alert box with Confirmation items -->
-
-        <h3 class="heading heading-avatar"> Alert box with confirmation items</h3>
-        <p class="description description-avatar"> You can use an alert box with stacked and choosable items also. These
-            type of
-            alerts are useful in forms. You need to include class
-            <span class="author"> alert-items </span> only if you have less items. But in case if you have more items
-            then three then also include <span class="author"> alert-items-scroll </span> for scrollable menu. And for
-            particular item add <span class="author"> alert-item
-            </span>
-            as
-            shown below. </p>
-        <iframe class="code-snippet-display"
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=base16-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=82px&dsblur=100px&wc=true&wa=true&pv=27px&ph=22px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520Alert%2520box%2520with%2520confirmation%2520items%2520--%253E%250A%2520%2520%253Cdiv%2520class%253D%2522flex-center%2520alert-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522alert-heading%2522%253EChoose%2520Item%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522alert-items%2520alert-items-scroll%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522alert-item%2520alert-item-one%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522alert-items%2522%2520class%253D%2522alert-item-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253E%2520Item%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522alert-item%2520alert-item-two%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522alert-items%2522%2520class%253D%2522alert-item-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253E%2520Item%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522item%2520item-three%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522alert-items%2522%2520class%253D%2522alert-item-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253E%2520Item%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522item%2520item-four%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522alert-items%2522%2520class%253D%2522alert-item-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253E%2520Item%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522item%2520item-five%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522alert-items%2522%2520class%253D%2522alert-item-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253E%2520Item%25205%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522item%2520item-six%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522alert-items%2522%2520class%253D%2522alert-item-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253E%2520Item%25206%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522alert-button%2520alert-button-yes%2522%253EYes%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522alert-butt"
-            sandbox="allow-scripts allow-same-origin">
-        </iframe>
-        <div class="flex-center alert-center">
-            <div class="flex-center">
-                <div class="alert-container">
-                    <div class="alert-content">
-                        <h3 class="alert-heading">Choose Item</h3>
-                    </div>
-                    <ul class="alert-items alert-items-scroll">
-                        <li class="alert-item alert-item-one">
-                            <input type="radio" name="alert-items" class="alert-item-input">
-                            <i class="bi bi-house-door-fill home-icon"></i> Item 1</li>
-                        <li class="alert-item alert-item-two">
-                            <input type="radio" name="alert-items" class="alert-item-input">
-                            <i class="bi bi-house-door-fill home-icon"></i> Item 2</li>
-                        <li class="item item-three">
-                            <input type="radio" name="alert-items" class="alert-item-input">
-                            <i class="bi bi-house-door-fill home-icon"></i> Item 3</li>
-                        <li class="item item-four">
-                            <input type="radio" name="alert-items" class="alert-item-input">
-                            <i class="bi bi-house-door-fill home-icon"></i> Item 4</li>
-                        <li class="item item-five">
-                            <input type="radio" name="alert-items" class="alert-item-input">
-                            <i class="bi bi-house-door-fill home-icon"></i> Item 5</li>
-                        <li class="item item-six">
-                            <input type="radio" name="alert-items" class="alert-item-input">
-                            <i class="bi bi-house-door-fill home-icon"></i> Item 6</li>
-                    </ul>
-                    <div class="alert-buttons">
-                        <button class="alert-button alert-button-yes">Yes</button>
-                        <button class="alert-button alert-button-no">No</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Confirmation box - Stacked -->
-
-        <h3 class="heading heading-avatar"> Alert box with confirmation items</h3>
-        <p class="description description-avatar"> You can use an alert box with stacked and choosable items also. These
-            type of
-            alerts are useful in forms. You need to include class
-            <span class="author"> alert-items </span> only if you have less items. But in case if you have more items
-            then three then also include <span class="author"> alert-items-scroll </span> for scrollable menu. And for
-            particular item add <span class="author"> alert-item
-            </span>
-            as
-            shown below. </p>
-        <iframe class="code-snippet-display"
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=base16-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=82px&dsblur=100px&wc=true&wa=true&pv=27px&ph=22px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520Alert%2520box%2520with%2520stacked%2520items%2520and%2520buttons%2520--%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522alert-heading%2522%253EChoose%2520Item%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522alert-items%2520alert-items-scroll%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522alert-item%2520alert-item-one%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522alert-items%2522%2520class%253D%2522alert-item-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522item%2520item-two%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522alert-items%2522%2520class%253D%2522alert-item-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522item%2520item-three%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522alert-items%2522%2520class%253D%2522alert-item-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522item%2520item-four%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522alert-items%2522%2520class%253D%2522alert-item-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522item%2520item-five%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522alert-items%2522%2520class%253D%2522alert-item-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253EItem%25205%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522item%2520item-six%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522alert-items%2522%2520class%253D%2522alert-item-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253EItem%25206%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-buttons%2520alert-buttons-stacked%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522alert-button%2520alert-button-yes%2522%253EYes%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522alert-button%2520alert-button-no%2522%253ENo%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
-            sandbox="allow-scripts allow-same-origin">
-        </iframe>
-        <div class="flex-center alert-center">
-            <div class="flex-center">
-                <div class="alert-container">
-                    <div class="alert-content">
-                        <h3 class="alert-heading">Choose Item</h3>
-                    </div>
-                    <ul class="alert-items alert-items-scroll">
-                        <li class="alert-item alert-item-one">
-                            <input type="radio" name="alert-items" class="alert-item-input">
-                            <i class="bi bi-house-door-fill home-icon"></i> Item 1</li>
-                        <li class="item item-two">
-                            <input type="radio" name="alert-items" class="alert-item-input">
-                            <i class="bi bi-house-door-fill home-icon"></i> Item 2</li>
-                        <li class="item item-three">
-                            <input type="radio" name="alert-items" class="alert-item-input">
-                            <i class="bi bi-house-door-fill home-icon"></i> Item 3</li>
-                        <li class="item item-four">
-                            <input type="radio" name="alert-items" class="alert-item-input">
-                            <i class="bi bi-house-door-fill home-icon"></i> Item 4</li>
-                        <li class="item item-five">
-                            <input type="radio" name="alert-items" class="alert-item-input">
-                            <i class="bi bi-house-door-fill home-icon"></i> Item 5</li>
-                        <li class="item item-six">
-                            <input type="radio" name="alert-items" class="alert-item-input">
-                            <i class="bi bi-house-door-fill home-icon"></i> Item 6</li>
-                    </ul>
-                    <div class="alert-buttons alert-buttons-stacked">
-                        <button class="alert-button alert-button-yes">Yes</button>
-                        <button class="alert-button alert-button-no">No</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>
