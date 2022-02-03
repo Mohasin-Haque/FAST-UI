@@ -4,16 +4,12 @@
 }
 
 .badge_container-main {
-  /* display: flex; */
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
   margin: 1rem;
 }
 
 .text_with_badge {
-  /* display: flex; for centering text */
-  /* align-items: center; */
   margin: 1rem;
 }
 
@@ -24,7 +20,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--dark-white);
+  color: var(--btn-background-color);
   border-radius: 50%;
   position: relative;
   bottom: 10px;
@@ -44,8 +40,6 @@
 }
 
 .badge_container-btn {
-  /* display: flex; */
-  /* align-items: center; */
   margin: 1rem;
 }
 
@@ -73,17 +67,7 @@
 
 .btn_and_badge {
   padding: 1rem;
-  /* display: flex; */
-
-  /* align-items: center; */
 }
-
-/* btn with toggle */
-
-/* .btn_and_badge-toggle {
-  display: flex;
-  align-items: center;
-} */
 
 .btn-toggle-badge {
   background-color: var(--item-background-color);
