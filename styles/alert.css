@@ -1,0 +1,30 @@
+.alert-center {
+  justify-content: center;
+}
+
+.alert {
+  width: 50%;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+}
+
+.alert-success {
+  background-color: var(--status-online);
+  color: var(--btn-background-color);
+}
+
+.alert-danger {
+  background-color: var(--status-dnd);
+  color: var(--btn-background-color);
+}
+
+.alert-warning {
+  background-color: var(--status-idle);
+  color: var(--btn-background-color);
+}
+
+.alert-info {
+  background-color: var(--item-background-color);
+  color: var(--btn-background-color);
+}
