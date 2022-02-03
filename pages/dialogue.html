@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohasin Haque">
+    <meta name="description" content="Choose the dialogue box of your type and give your project a trendy look.">
+    <link rel="icon" href="https://img.icons8.com/ios-glyphs/50/000000/fast-track.png" />
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>Dialogue | FAST UI</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="left-nav">
+                <a href="../index.html" class="nav nav-logo">FAST UI</a>
+                <span class="small-text">V 1.0</span>
+            </div>
+            <div class="right-nav">
+                <ul class="list">
+                    <li><a href="../index.html" class="nav nav-pills">Home</a></li>
+                    <li><a href="./avatar.html" class="nav right-nav-active nav-pills">Documentation</a></li>
+                    <li><a href="./installation.html" class="nav nav-pills">Installation</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="sidebar">
+        <div class="items">
+            <p class="subtext">Components</p>
+            <a href="./avatar.html" class="item">Avatar</a>
+            <a href="./alert.html" class="item">Alert</a>
+            <a href="./badge.html" class="item">Badges</a>
+            <a href="./button.html" class="item">Button</a>
+            <a href="./card.html" class="item">Card</a>
+            <a href="./dialogue.html" class="item">Dialogue</a>
+            <a href="./image.html" class="item">Image</a>
+            <a href="./input.html" class="item">Input</a>
+        </div>
+    </div>
+    <div class="main-container-components">
+        <h2 class="heading">Dialogue</h2>
+        <p class="description">An dialogue displays a short, important message in a way that attracts the user's
+            attention
+            without interrupting the user's task.</p>
+        <h3 class="heading heading-avatar"> Dialogue box with description</h3>
+        <p class="description description-avatar">You can use description in Dialogue boxes. You need to include class
+            <span class="author">dialogue-description</span> and for buttons add <span
+                class="author">dialogue-buttons</span>as shown below. </p>
+        <iframe class="code-snippet-display"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=base16-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=82px&dsblur=100px&wc=true&wa=true&pv=27px&ph=22px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522flex-center%2520dialogue-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dialogue-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522dialogue-heading%2522%253EDo%2520you%2520want%2520to%2520Exit%253F%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522dialogue-description%2522%253EPlease%2520confirm%2520that%2520you%2520really%2520want%2520to%2520exit%2520from%2520this%2520wonderfull%2520app.%2520Lorem%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520ipsum%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Soluta%252C%2520ipsam.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dialogue-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522dialogue-button%2520dialogue-button-yes%2522%253EYes%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522dialogue-button%2520dialogue-button-no%2522%253ENo%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <!-- dialogue BOXES -->
+        <!-- dialogue box with description -->
+        <div class="flex-center dialogue-center">
+            <div class="flex-center dialogue-container">
+                <div class="dialogue-content">
+                    <h3 class="dialogue-heading">Do you want to Exit?</h3>
+                    <p class="dialogue-description">Please confirm that you really want to exit from this wonderful app.
+                        Also note that your current progress will be lost and you will be reset.</p>
+                </div>
+                <div class="dialogue-buttons">
+                    <button class="dialogue-button dialogue-button-yes">Yes</button>
+                    <button class="dialogue-button dialogue-button-no">No</button>
+                </div>
+            </div>
+        </div>
+        <!--dialogue box with title -->
+        <h3 class="heading heading-avatar">Dialogue box with title</h3>
+        <p class="description description-avatar"> You can use an dialogue box only with title. You need to include
+            class
+            <span class="author"> dialogue-heading</span> and for buttons add <span class="author">
+                dialogue-buttons</span>as
+            shown below. </p>
+        <iframe class="code-snippet-display"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=base16-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=82px&dsblur=100px&wc=true&wa=true&pv=27px&ph=22px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--dialogue%2520box%2520with%2520title%2520--%253E%250A%253Cdiv%2520class%253D%2522flex-center%2520dialogue-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dialogue-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dialogue-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522dialogue-heading%2522%253EDo%2520you%2520want%2520to%2520Exit%253F%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522dialogue-description%2522%253EDialogue%2520body%2520text%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dialogue-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522dialogue-button%2520dialogue-button-yes%2522%253EYes%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522dialogue-button%2520dialogue-button-no%2522%253ENo%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <div class="flex-center dialogue-center">
+            <div class="flex-center">
+                <div class="dialogue-container">
+                    <div class="dialogue-content">
+                        <h3 class="dialogue-heading">Do you want to Exit?</h3>
+                        <p class="dialogue-description">Dialogue body text</p>
+                    </div>
+                    <div class="dialogue-buttons">
+                        <button class="dialogue-button dialogue-button-yes">Yes</button>
+                        <button class="dialogue-button dialogue-button-no">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- dialogue without title -->
+
+        <h3 class="heading heading-avatar">Dialogue box without title</h3>
+        <p class="description description-avatar"> You can use an dialogue box without tilte also. You need to include
+            class
+            <span class="author"> dialogue-content </span> and for buttons add <span class="author"> dialogue-buttons
+            </span>
+            as
+            shown below. </p>
+        <iframe class="code-snippet-display"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=base16-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=82px&dsblur=100px&wc=true&wa=true&pv=27px&ph=22px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520dialogue%2520without%2520title%2520--%253E%250A%253Cdiv%2520class%253D%2522flex-center%2520dialogue-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dialogue-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dialogue-content%2522%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522dialogue-description%2522%253EDialogue%2520body%2520text%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dialogue-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522dialogue-button%2520dialogue-button-yes%2522%253EYes%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522dialogue-button%2520dialogue-button-no%2522%253ENo%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <div class="flex-center dialogue-center">
+            <div class="flex-center">
+                <div class="dialogue-container">
+                    <div class="dialogue-content">
+                        <p class="dialogue-description">Dialogue body text</p>
+                    </div>
+                    <div class="dialogue-buttons">
+                        <button class="dialogue-button dialogue-button-yes">Yes</button>
+                        <button class="dialogue-button dialogue-button-no">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- dialogue with title - Stacked -->
+
+        <h3 class="heading heading-avatar">Dialogue box with stacked buttons</h3>
+        <p class="description description-avatar"> You can use an dialogue box without title and with stacked button
+            also.
+            You need to include
+            class
+            <span class="author"> dialogue-content </span> and for buttons add <span class="author">
+                dialogue-buttons-stacked
+            </span>
+            as
+            shown below. </p>
+        <iframe class="code-snippet-display"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=base16-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=82px&dsblur=100px&wc=true&wa=true&pv=27px&ph=22px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520dialogue%2520without%2520title%2520and%2520with%2520stacked%2520buttons%2520--%253E%250A%2520%253Cdiv%2520class%253D%2522flex-center%2520dialogue-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dialogue-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dialogue-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522dialogue-description%2522%253EDialogue%2520body%2520text%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dialogue-buttons%2520dialogue-buttons-stacked%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522dialogue-button%2520dialogue-button-yes%2522%253EYes%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522dialogue-button%2520dialogue-button-no%2522%253ENo%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <div class="flex-center dialogue-center">
+            <div class="flex-center">
+                <div class="dialogue-container">
+                    <div class="dialogue-content">
+                        <p class="dialogue-description">Dialogue body text</p>
+                    </div>
+                    <div class="dialogue-buttons dialogue-buttons-stacked">
+                        <button class="dialogue-button dialogue-button-yes">Yes</button>
+                        <button class="dialogue-button dialogue-button-no">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Simple Dialogue Box -->
+
+        <h3 class="heading heading-avatar">Dialogue box with items</h3>
+        <p class="description description-avatar"> You can use an dialogue box with stacked items also. These type of
+            dialogues are useful in forms. You need to include class
+            <span class="author"> dialogue-items</span> and for particular item add <span class="author"> dialogue-item
+            </span>
+            as
+            shown below. </p>
+        <iframe class="code-snippet-display"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=base16-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=82px&dsblur=100px&wc=true&wa=true&pv=27px&ph=22px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520dialogue%2520box%2520with%2520stacked%2520items%2520--%253E%250A%2520%2520%253Cdiv%2520class%253D%2522flex-center%2520dialogue-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dialogue-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dialogue-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522dialogue-heading%2522%253EChoose%2520from%2520the%2520items%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522dialogue-items%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522dialogue-item%2520dialogue-item-one%2522%253E%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253E%2520Item%25201%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522dialogue-item%2520dialogue-item-two%2522%253E%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253E%2520Item%25202%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522dialogue-item%2520dialogue-item-three%2522%253E%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253E%2520Item%25203%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <div class="flex-center dialogue-center">
+            <div class="flex-center">
+                <div class="dialogue-container">
+                    <div class="dialogue-content">
+                        <h3 class="dialogue-heading">Choose from the items</h3>
+                    </div>
+                    <ul class="dialogue-items">
+                        <li class="dialogue-item dialogue-item-one"><i class="bi bi-house-door-fill home-icon"></i> Item
+                            1
+                        </li>
+                        <li class="dialogue-item dialogue-item-two"><i class="bi bi-house-door-fill home-icon"></i> Item
+                            2
+                        </li>
+                        <li class="dialogue-item dialogue-item-three"><i class="bi bi-house-door-fill home-icon"></i>
+                            Item 3
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- dialogue box with Confirmation items -->
+
+        <h3 class="heading heading-avatar">Dialogue box with confirmation items</h3>
+        <p class="description description-avatar"> You can use an dialogue box with stacked and choosable items also.
+            These
+            type of
+            dialogues are useful in forms. You need to include class
+            <span class="author"> dialogue-items </span> only if you have less items. But in case if you have more items
+            then three then also include <span class="author"> dialogue-items-scroll </span> for scrollable menu. And
+            for
+            particular item add <span class="author"> dialogue-item
+            </span>
+            as
+            shown below. </p>
+        <iframe class="code-snippet-display"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=base16-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=82px&dsblur=100px&wc=true&wa=true&pv=27px&ph=22px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520dialogue%2520box%2520with%2520confirmation%2520items%2520--%253E%250A%2520%2520%253Cdiv%2520class%253D%2522flex-center%2520dialogue-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dialogue-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dialogue-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522dialogue-heading%2522%253EChoose%2520Item%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522dialogue-items%2520dialogue-items-scroll%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522dialogue-item%2520dialogue-item-one%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522dialogue-items%2522%2520class%253D%2522dialogue-item-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253E%2520Item%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522dialogue-item%2520dialogue-item-two%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522dialogue-items%2522%2520class%253D%2522dialogue-item-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253E%2520Item%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522item%2520item-three%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522dialogue-items%2522%2520class%253D%2522dialogue-item-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253E%2520Item%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522item%2520item-four%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522dialogue-items%2522%2520class%253D%2522dialogue-item-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253E%2520Item%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522item%2520item-five%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522dialogue-items%2522%2520class%253D%2522dialogue-item-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253E%2520Item%25205%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522item%2520item-six%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522dialogue-items%2522%2520class%253D%2522dialogue-item-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253E%2520Item%25206%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dialogue-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522dialogue-button%2520dialogue-button-yes%2522%253EYes%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522dialogue-butt"
+            sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <div class="flex-center dialogue-center">
+            <div class="flex-center">
+                <div class="dialogue-container">
+                    <div class="dialogue-content">
+                        <h3 class="dialogue-heading">Choose Item</h3>
+                    </div>
+                    <ul class="dialogue-items dialogue-items-scroll">
+                        <li class="dialogue-item dialogue-item-one">
+                            <input type="radio" name="dialogue-items" class="dialogue-item-input">
+                            <i class="bi bi-house-door-fill home-icon"></i> Item 1</li>
+                        <li class="dialogue-item dialogue-item-two">
+                            <input type="radio" name="dialogue-items" class="dialogue-item-input">
+                            <i class="bi bi-house-door-fill home-icon"></i> Item 2</li>
+                        <li class="item item-three">
+                            <input type="radio" name="dialogue-items" class="dialogue-item-input">
+                            <i class="bi bi-house-door-fill home-icon"></i> Item 3</li>
+                        <li class="item item-four">
+                            <input type="radio" name="dialogue-items" class="dialogue-item-input">
+                            <i class="bi bi-house-door-fill home-icon"></i> Item 4</li>
+                        <li class="item item-five">
+                            <input type="radio" name="dialogue-items" class="dialogue-item-input">
+                            <i class="bi bi-house-door-fill home-icon"></i> Item 5</li>
+                        <li class="item item-six">
+                            <input type="radio" name="dialogue-items" class="dialogue-item-input">
+                            <i class="bi bi-house-door-fill home-icon"></i> Item 6</li>
+                    </ul>
+                    <div class="dialogue-buttons">
+                        <button class="dialogue-button dialogue-button-yes">Yes</button>
+                        <button class="dialogue-button dialogue-button-no">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Confirmation box - Stacked -->
+
+        <h3 class="heading heading-avatar">Dialogue box with confirmation items</h3>
+        <p class="description description-avatar"> You can use an dialogue box with stacked and choosable items also.
+            These
+            type of
+            dialogues are useful in forms. You need to include class
+            <span class="author"> dialogue-items </span> only if you have less items. But in case if you have more items
+            then three then also include <span class="author"> dialogue-items-scroll </span> for scrollable menu. And
+            for
+            particular item add <span class="author"> dialogue-item
+            </span>
+            as
+            shown below. </p>
+        <iframe class="code-snippet-display"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=base16-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=82px&dsblur=100px&wc=true&wa=true&pv=27px&ph=22px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520dialogue%2520box%2520with%2520stacked%2520items%2520and%2520buttons%2520--%253E%250A%2520%2520%253Cdiv%2520class%253D%2522dialogue-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dialogue-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522dialogue-heading%2522%253EChoose%2520Item%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522dialogue-items%2520dialogue-items-scroll%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522dialogue-item%2520dialogue-item-one%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522dialogue-items%2522%2520class%253D%2522dialogue-item-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522item%2520item-two%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522dialogue-items%2522%2520class%253D%2522dialogue-item-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522item%2520item-three%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522dialogue-items%2522%2520class%253D%2522dialogue-item-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522item%2520item-four%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522dialogue-items%2522%2520class%253D%2522dialogue-item-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522item%2520item-five%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522dialogue-items%2522%2520class%253D%2522dialogue-item-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253EItem%25205%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522item%2520item-six%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522dialogue-items%2522%2520class%253D%2522dialogue-item-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522bi%2520bi-house-door-fill%2520home-icon%2522%253E%253C%252Fi%253EItem%25206%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dialogue-buttons%2520dialogue-buttons-stacked%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522dialogue-button%2520dialogue-button-yes%2522%253EYes%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522dialogue-button%2520dialogue-button-no%2522%253ENo%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <div class="flex-center dialogue-center">
+            <div class="flex-center">
+                <div class="dialogue-container">
+                    <div class="dialogue-content">
+                        <h3 class="dialogue-heading">Choose Item</h3>
+                    </div>
+                    <ul class="dialogue-items dialogue-items-scroll">
+                        <li class="dialogue-item dialogue-item-one">
+                            <input type="radio" name="dialogue-items" class="dialogue-item-input">
+                            <i class="bi bi-house-door-fill home-icon"></i> Item 1</li>
+                        <li class="item item-two">
+                            <input type="radio" name="dialogue-items" class="dialogue-item-input">
+                            <i class="bi bi-house-door-fill home-icon"></i> Item 2</li>
+                        <li class="item item-three">
+                            <input type="radio" name="dialogue-items" class="dialogue-item-input">
+                            <i class="bi bi-house-door-fill home-icon"></i> Item 3</li>
+                        <li class="item item-four">
+                            <input type="radio" name="dialogue-items" class="dialogue-item-input">
+                            <i class="bi bi-house-door-fill home-icon"></i> Item 4</li>
+                        <li class="item item-five">
+                            <input type="radio" name="dialogue-items" class="dialogue-item-input">
+                            <i class="bi bi-house-door-fill home-icon"></i> Item 5</li>
+                        <li class="item item-six">
+                            <input type="radio" name="dialogue-items" class="dialogue-item-input">
+                            <i class="bi bi-house-door-fill home-icon"></i> Item 6</li>
+                    </ul>
+                    <div class="dialogue-buttons dialogue-buttons-stacked">
+                        <button class="dialogue-button dialogue-button-yes">Yes</button>
+                        <button class="dialogue-button dialogue-button-no">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
