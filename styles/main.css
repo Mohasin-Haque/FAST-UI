@@ -42,7 +42,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: var(--body-background-color);
   color: var(--text-color-black);
   box-shadow: var(--box-shadow-down);
 }
@@ -155,7 +154,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--body-background-color);
   color: var(--text-color-black);
   box-shadow: var(--box-shadow-up);
   position: absolute;
