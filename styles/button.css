@@ -2,3 +2,24 @@
   background-color: var(--btn-background-color);
   color: var(--primary-color);
 }
+
+.btn-link{
+  background-color: var(--btn-background-color);
+  color: var(--primary-color);
+}
+
+.btn-float{
+  height: 2rem;
+  width: 2rem;
+  padding: 2rem;
+  margin: 2rem;
+  background-color: var(--text-color-black);
+  color: var(--btn-background-color);
+  border-radius: 50%;
+  border: none;
+  font-size: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
