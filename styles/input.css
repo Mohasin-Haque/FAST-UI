@@ -1,0 +1,40 @@
+.input-container{
+    font-size: 1.2rem;
+}
+
+.label-text{
+    color: var(--text-color-black);
+}
+
+.label-success{
+    color: var(--status-online);
+}
+
+.lable-error{
+    color: var(--status-dnd);
+}
+
+.input{
+    padding: .5rem;
+    margin: .5rem 0 .5rem 0;
+    outline: none;
+}
+
+.input-text{
+    color: var(--text-color-black);
+    border: 2px solid var(--text-color-black);
+}
+
+.input-success{
+    color: var(--status-online);
+    border: 2px solid var(--status-online)
+}
+
+.input-error{
+    color: var(--status-dnd);
+    border: 2px solid var(--status-dnd);
+}
+
+.radio-disabled{
+    cursor: not-allowed;
+}
