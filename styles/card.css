@@ -1,0 +1,133 @@
+.card-heading {
+  margin-left: 0.3rem;
+}
+
+.card-author {
+  padding: 2px;
+  margin: 0.3rem;
+}
+
+.card-content {
+  margin: 0.5rem;
+}
+
+.card-container {
+  background-color: var(--body-background-color);
+  box-shadow: var(--box-shadow-card);
+  width: 22rem;
+  border-radius: 1rem;
+  border: 1px solid var(--primary-color);
+}
+
+.card-horizontal {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+
+.card-image {
+  max-inline-size: 100%;
+  block-size: auto;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.image-horizontal {
+  border-radius: 0px;
+  width: 100%;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-around;
+  margin: 0.5rem 1rem 1rem 1rem;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+.card-btn {
+  border: none;
+  font-weight: bolder;
+  font-size: 1rem;
+  color: var(--primary-color);
+  background-color: var(--body-background-color);
+  cursor: pointer;
+}
+
+.card-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.fas {
+  color: var(--text-color-black);
+}
+
+.fas:hover {
+  color: var(--primary-color);
+}
+
+/* cards overlay */
+/********* Simple or original overlay *******/
+
+/* Main container */
+.overlay-image {
+  position: relative;
+  width: 100%;
+}
+
+/* Original image */
+.overlay-image .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Original text overlay */
+.overlay-image .text {
+  color: var(--body-background-color);
+  font-size: 2rem;
+  line-height: 1.5em;
+  text-shadow: 2px 2px 2px var(--text-color-black);
+  text-align: center;
+  position: absolute;
+  top: 90%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.dismiss {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.dismiss:hover {
+  color: var(--body-background-color);
+  background-color: var(--hover-color);
+}
+
+.card-badge {
+  background-color: var(--hover-color);
+  color: var(--body-background-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 5rem;
+  position: absolute;
+  top: 2.5%;
+  left: 0%;
+  text-align: center;
+}
