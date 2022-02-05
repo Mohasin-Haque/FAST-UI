@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohasin Haque">
+    <meta name="description"
+        content="Looking up for the cards.. Here you go. Choose the card you want for your choise.">
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>Card | FAST UI</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="left-nav">
+                <a href="../index.html" class="nav nav-logo">FAST UI</a>
+                <span class="small-text">V 1.0</span>
+            </div>
+            <div class="right-nav">
+                <ul class="list">
+                    <li><a href="../index.html" class="nav nav-pills">Home</a></li>
+                    <li><a href="./avatar.html" class="nav right-nav-active nav-pills">Documentation</a></li>
+                    <li><a href="./installation.html" class="nav nav-pills">Installation</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="sidebar">
+        <div class="items">
+            <p class="subtext">Components</p>
+            <a href="./avatar.html" class="item">Avatar</a>
+            <a href="./alert.html" class="item">Alert</a>
+            <a href="./badge.html" class="item">Badges</a>
+            <a href="./button.html" class="item">Button</a>
+            <a href="./card.html" class="item">Card</a>
+            <a href="./dialogue.html" class="item">Dialogue</a>
+            <a href="./image.html" class="item">Image</a>
+            <a href="./input.html" class="item">Input</a>
+        </div>
+    </div>
+
+    <div class="main-container-components">
+        <h2 class="heading">Card</h2>
+        <p class="description">Cards contain content and actions about a single subject. Cards are surfaces that display
+            content and actions on a single topic. They should be easy to scan for relevant and actionable information.
+            Elements, like text and images, should be placed on them in a way that clearly indicates hierarchy.
+        </p>
+        <!-- Basic card (Vertical)-->
+        <h3 class="heading heading-avatar">Basic Card (Vertical)</h3>
+        <p class="description description-avatar">A basic card may contain product image, product name, company name,
+            description of products, some buttons and icons. You can use <span class="colored-text">
+                card-container</span> for card layout and for components use <span class="colored-text"> card-image,
+                card-author, card-content</span> etc. classes as
+            shown below. </p>
+        <iframe class="code-snippet-display"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=base16-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=82px&dsblur=100px&wc=true&wa=true&pv=27px&ph=22px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520Basic%2520Card%2520--%253E%250A%253Cdiv%2520class%253D%2522card-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522image-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-image%2522%2520src%253D%2522..%252Fimages%252Fcard.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522error%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-heading%2522%253ETechie%2520Tessie%2520T-shirt%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-author%2522%253Eby%2520Techie%2520Tessie%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Give%2520yourself%2520a%2520cool%2520look%2520by%2520this%2520cool%2520t-shirt.%2520Made%2520with%2520pure%2520cotton%2520fabrics.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cfooter%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn%2522%253EBuy%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn%2522%253EAdd%2520To%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffooter%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <div class="badge_container-main flex-center">
+            <section>
+                <div class="card-container">
+                    <div class="image-div">
+                        <img class="card-image" src="../images/card.jpg" alt="error" />
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-heading">Techie Tessie T-shirt</h2>
+                        <p class="card-author">by Techie Tessie</p>
+                        <p class="card-content">
+                            Give yourself a cool look by this cool t-shirt. Made with pure cotton fabrics.
+                        </p>
+                    </div>
+                    <footer>
+                        <div class="card-actions">
+                            <button class="card-btn">Buy</button>
+                            <button class="card-btn">Add To Cart</button>
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </footer>
+                </div>
+        </div>
+        </section>
+
+        <!-- Basic card horizontal -->
+        <h3 class="heading heading-avatar">Basic Card (Horizontal)</h3>
+        <p class="description description-avatar">A basic card with badge will contain all the things that basic card
+            have and also one extra thing which is the badge which will be on image. You can use <span
+                class="colored-text">
+                card-container</span> for card layout, <span class="colored-text">card-badge</span> for dismiss button
+            and
+            for components use <span class="colored-text"> card-image,
+                card-author, card-content</span> etc. classes as
+            shown below. </p>
+
+        <div class="badge_container-main flex-center">
+            <section>
+                <div class="card-container">
+                    <div class="card-horizontal">
+                        <div class="image-div">
+                            <div class="overlay-image">
+                                <img class="card-image image-horizontal" src="../images/card1.jpg" alt="error" />
+                                <div class="card-badge">New</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="card-heading">Techie Tessie T-shirt</h2>
+                            <p class="card-author">by Techie Tessie</p>
+                            <p class="card-content">
+                                Give yourself a cool look by this cool t-shirt. Made with pure cotton fabrics.
+                            </p>
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="card-actions">
+                            <button class="card-btn">Buy</button>
+                            <button class="card-btn">Add To Cart</button>
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </footer>
+                </div>
+        </div>
+        </section>
+
+        <!-- Basic w/ only buttons card -->
+        <h3 class="heading heading-avatar">Basic Card with buttons only</h3>
+        <p class="description description-avatar">A basic card w/ only buttons will contain the all the things of basic
+            card except icons. You can use <span class="colored-text"> card-container</span> for card layout and for
+            components use <span class="colored-text"> card-image, card-author, card-content </span> etc. classes as
+            shown below.</p>
+        <iframe class="code-snippet-display"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=base16-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=82px&dsblur=100px&wc=true&wa=true&pv=27px&ph=22px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520Simple%2520Card%2520w%252F%2520buttons%2520only%2520--%253E%250A%253Cdiv%2520class%253D%2522card-container%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522image-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-image%2522%2520src%253D%2522..%252Fimages%252Fcard.jpg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522error%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-heading%2522%253ETechie%2520Tessie%2520T-shirt%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-author%2522%253Eby%2520Techie%2520Tessie%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Give%2520yourself%2520a%2520cool%2520look%2520by%2520this%2520cool%2520t-shirt.%2520Made%2520with%2520pure%2520cotton%2520fabrics.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cfooter%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn%2522%253EBuy%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn%2522%253EAdd%2520To%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Ffooter%253E%250A%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <div class="badge_container-main flex-center">
+            <section>
+                <div class="card-container">
+                    <div class="image-div">
+                        <img class="card-image" src="../images/card.jpg" alt="error" />
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-heading">Techie Tessie T-shirt</h2>
+                        <p class="card-author">by Techie Tessie</p>
+                        <p class="card-content">
+                            Give yourself a cool look by this cool t-shirt. Made with pure cotton fabrics.
+                        </p>
+                    </div>
+                    <footer>
+                        <div class="card-actions">
+                            <button class="card-btn">Buy</button>
+                            <button class="card-btn">Add To Cart</button>
+                        </div>
+                    </footer>
+                </div>
+        </div>
+        </section>
+
+        <!-- Basic card  w/ icons only-->
+        <h3 class="heading heading-avatar">Basic Card w/ icon only</h3>
+        <p class="description description-avatar">A basic card with only icon will contain all the things that basic
+            card have except buttons. You can use <span class="colored-text">
+                card-container</span> for card layout and for components use <span class="colored-text"> card-image,
+                card-author, card-content</span> etc. classes as
+            shown below. </p>
+        <iframe class="code-snippet-display"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=base16-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=82px&dsblur=100px&wc=true&wa=true&pv=27px&ph=22px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520Simple%2520Card%2520w%252F%2520icon%2520only%2520--%253E%250A%2520%253Cdiv%2520class%253D%2522card-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522image-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-image%2522%2520src%253D%2522..%252Fimages%252Fcard.jpg%2522%2520alt%253D%2522error%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-heading%2522%253ETechie%2520Tessie%2520T-shirt%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-author%2522%253Eby%2520Techie%2520Tessie%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Give%2520yourself%2520a%2520cool%2520look%2520by%2520this%2520cool%2520t-shirt.%2520Made%2520with%2520pure%2520cotton%2520fabrics.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cfooter%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffooter%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <div class="badge_container-main flex-center">
+            <section>
+                <div class="card-container">
+                    <div class="image-div">
+                        <img class="card-image" src="../images/card.jpg" alt="error" />
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-heading">Techie Tessie T-shirt</h2>
+                        <p class="card-author">by Techie Tessie</p>
+                        <p class="card-content">
+                            Give yourself a cool look by this cool t-shirt. Made with pure cotton fabrics.
+                        </p>
+                    </div>
+                    <footer>
+                        <div class="card-actions">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </footer>
+                </div>
+        </div>
+        </section>
+
+        <!-- /* Simple card with text overlay */ -->
+        <h3 class="heading heading-avatar">Basic Card w/ text overlay</h3>
+        <p class="description description-avatar">A basic card with text overlay will contain all the things that basic
+            card have except the heading text which will be on image. You can use <span class="colored-text">
+                card-container</span> for card layout and for components use <span class="colored-text"> card-image,
+                card-author, card-content</span> etc. classes as
+            shown below. </p>
+        <iframe class="code-snippet-display"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=base16-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=82px&dsblur=100px&wc=true&wa=true&pv=27px&ph=22px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520Simple%2520Card%2520w%252F%2520text%2520overlay%2520--%253E%250A%2520%253Cdiv%2520class%253D%2522card-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522image-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522overlay-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-image%2522%2520src%253D%2522..%252Fimages%252Fcard.jpg%2522%2520alt%253D%2522error%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text%2522%253ETechie%2520Tessie%2520T-shirt%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-author%2522%253Eby%2520Techie%2520Tessie%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Give%2520yourself%2520a%2520cool%2520look%2520by%2520this%2520cool%2520t-shirt.%2520Made%2520with%2520pure%2520cotton%2520fabrics.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cfooter%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn%2522%253EBuy%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn%2522%253EAdd%2520To%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffooter%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <div class="badge_container-main flex-center">
+            <section>
+                <div class="card-container">
+                    <div class="image-div">
+                        <div class="overlay-image">
+                            <img class="card-image" src="../images/card.jpg" alt="error" />
+                            <div class="text">Techie Tessie T-shirt</div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-author">by Techie Tessie</p>
+                        <p class="card-content">
+                            Give yourself a cool look by this cool t-shirt. Made with pure cotton fabrics.
+                        </p>
+                    </div>
+                    <footer>
+                        <div class="card-actions">
+                            <button class="card-btn">Buy</button>
+                            <button class="card-btn">Add To Cart</button>
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </footer>
+                </div>
+        </div>
+        </section>
+
+        <!-- Card with dismiss -->
+        <h3 class="heading heading-avatar">Basic Card w/ dismiss</h3>
+        <p class="description description-avatar">A basic card with dismiss will contain all the things that basic card
+            have and also one extra thing which is the dismiss button which will be on image. You can use <span
+                class="colored-text">
+                card-container</span> for card layout, <span class="colored-text">dismiss</span> for dismiss button and
+            for components use <span class="colored-text"> card-image,
+                card-author, card-content</span> etc. classes as
+            shown below. </p>
+        <iframe class="code-snippet-display"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=base16-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=82px&dsblur=100px&wc=true&wa=true&pv=27px&ph=22px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520Simple%2520Card%2520w%252F%2520dismiss%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522image-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522overlay-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-image%2522%2520src%253D%2522..%252Fimages%252Fcard.jpg%2522%2520alt%253D%2522error%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dismiss%2522%253EX%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-heading%2522%253ETechie%2520Tessie%2520T-shirt%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-author%2522%253Eby%2520Techie%2520Tessie%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Give%2520yourself%2520a%2520cool%2520look%2520by%2520this%2520cool%2520t-shirt.%2520Made%2520with%2520pure%2520cotton%2520fabrics.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cfooter%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn%2522%253EBuy%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn%2522%253EAdd%2520To%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffooter%253E"
+            sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <div class="badge_container-main flex-center">
+            <section>
+                <div class="card-container">
+                    <div class="image-div">
+                        <div class="overlay-image">
+                            <img class="card-image" src="../images/card.jpg" alt="error" />
+                            <div class="dismiss">X</div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-heading">Techie Tessie T-shirt</h2>
+                        <p class="card-author">by Techie Tessie</p>
+                        <p class="card-content">
+                            Give yourself a cool look by this cool t-shirt. Made with pure cotton fabrics.
+                        </p>
+                    </div>
+                    <footer>
+                        <div class="card-actions">
+                            <button class="card-btn">Buy</button>
+                            <button class="card-btn">Add To Cart</button>
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </footer>
+                </div>
+        </div>
+        </section>
+
+        <!-- Card with badge -->
+        <h3 class="heading heading-avatar">Basic Card w/ badge</h3>
+        <p class="description description-avatar">A basic card with badge will contain all the things that basic card
+            have and also one extra thing which is the badge which will be on image. You can use <span
+                class="colored-text">
+                card-container</span> for card layout, <span class="colored-text">card-badge</span> for dismiss button
+            and
+            for components use <span class="colored-text"> card-image,
+                card-author, card-content</span> etc. classes as
+            shown below. </p>
+        <iframe class="code-snippet-display"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=base16-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=82px&dsblur=100px&wc=true&wa=true&pv=27px&ph=22px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520Simple%2520Card%2520Badge%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522image-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522overlay-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-image%2522%2520src%253D%2522..%252Fimages%252Fcard1.jpg%2522%2520alt%253D%2522error%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge%2522%253ENew%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-heading%2522%253ETechie%2520Tessie%2520T-shirt%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-author%2522%253Eby%2520Techie%2520Tessie%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Give%2520yourself%2520a%2520cool%2520look%2520by%2520this%2520cool%2520t-shirt.%2520Made%2520with%2520pure%2520cotton%2520fabrics.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cfooter%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn%2522%253EBuy%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn%2522%253EAdd%2520To%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffooter%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <div class="badge_container-main flex-center">
+            <section>
+                <div class="card-container">
+                    <div class="image-div">
+                        <div class="overlay-image">
+                            <img class="card-image" src="../images/card1.jpg" alt="error" />
+                            <div class="card-badge">New</div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-heading">Techie Tessie T-shirt</h2>
+                        <p class="card-author">by Techie Tessie</p>
+                        <p class="card-content">
+                            Give yourself a cool look by this cool t-shirt. Made with pure cotton fabrics.
+                        </p>
+                    </div>
+                    <footer>
+                        <div class="card-actions">
+                            <button class="card-btn">Buy</button>
+                            <button class="card-btn">Add To Cart</button>
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </footer>
+                </div>
+        </div>
+        </section>
+
+        <!-- Text only Card -->
+        <h3 class="heading heading-avatar">Text only Card</h3>
+        <p class="description description-avatar">A text only card will contain only texts like product name ,
+            description etc, it will not contain any images and buttons. You can use <span class="colored-text">
+                card-container</span> for card layout and for components use <span class="colored-text">card-author,
+                card-content</span> etc. classes as
+            shown below. </p>
+        <iframe class="code-snippet-display"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=base16-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=82px&dsblur=100px&wc=true&wa=true&pv=27px&ph=22px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520Text%2520only%2520Card%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-heading%2522%253ETechie%2520Tessie%2520T-shirt%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-author%2522%253Eby%2520Techie%2520Tessie%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Give%2520yourself%2520a%2520cool%2520look%2520by%2520this%2520cool%2520t-shirt.%2520Made%2520with%2520pure%2520cotton%2520fabrics.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <div class="badge_container-main flex-center">
+            <section>
+                <div class="card-container">
+                    <div class="card-content">
+                        <h2 class="card-heading">Techie Tessie T-shirt</h2>
+                        <p class="card-author">by Techie Tessie</p>
+                        <p class="card-content">
+                            Give yourself a cool look by this cool t-shirt. Made with pure cotton fabrics.
+                        </p>
+                    </div>
+                </div>
+        </div>
+        </section>
+    </div>
+</body>
+
+</html>
