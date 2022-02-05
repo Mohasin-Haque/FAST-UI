@@ -31,8 +31,8 @@
 }
 
 .dialogue-button-yes {
-  color: red;
-  background-color: white;
+  color: var(--primary-color);
+  background-color: var(--body-background-color);
 }
 
 .dialogue-button-yes:hover {
@@ -40,8 +40,8 @@
 }
 
 .dialogue-button-no {
-  color: green;
-  background-color: white;
+  color: var(--status-online);
+  background-color: var(--body-background-color);
 }
 
 .dialogue-button-no:hover {
@@ -72,7 +72,7 @@
 .dialogue-items-scroll {
   overflow: scroll;
   height: 10rem;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  border-top: 2px solid var(--text-color-black);
+  border-bottom: 2px solid var(--text-color-black);
   margin-bottom: 1rem;
 }
