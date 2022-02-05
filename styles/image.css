@@ -1,6 +1,6 @@
 .image-responsive {
-  max-width: 100%;
-  height: auto;
+  max-inline-size: 100%;
+  block-size: auto;
 }
 
 .image-round {
