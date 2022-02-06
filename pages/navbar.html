@@ -1,33 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = "author" content="Mohasin Haque">
-    <meta name = "description" content = "Navbar for my Component Library">
+    <meta name="author" content="Mohasin Haque">
+    <meta name="description" content="Navbar for my Component Library">
     <link rel="stylesheet" href="../styles/main.css">
     <title>Navbar | Fast UI</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar">
             <div class="left-nav">
-                <a href="#" class="nav nav-logo">FAST UI</a>
+                <a href="../index.html" class="nav nav-logo">FAST UI</a>
                 <span class="small-text">V 1.0</span>
             </div>
             <div class="right-nav">
                 <ul class="list">
-                    <li><a href="./index.html" class="nav right-nav-active nav-pills">Home</a></li>
-                    <li>
-                        <a href="./pages/avatar.html" class="nav nav-pills">Documentation</a>
-                    </li>
-                    <li>
-                        <a href="./pages/installation.html" class="nav nav-pills">Installation</a>
-                    </li>
+                    <li><a href="../index.html" class="nav nav-pills">Home</a></li>
+                    <li><a href="./avatar.html" class="nav right-nav-active nav-pills">Documentation</a></li>
+                    <li><a href="./installation.html" class="nav nav-pills">Installation</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+    <div class="main-container">
+        <div class="items">
+            <p class="subtext">Components</p>
+            <a href="./avatar.html" class="item">Avatar</a>
+            <a href="./alert.html" class="item">Alert</a>
+            <a href="./badge.html" class="item">Badges</a>
+            <a href="./button.html" class="item">Button</a>
+            <a href="./card.html" class="item">Card</a>
+            <a href="./dialogue.html" class="item">Dialogue</a>
+            <a href="./image.html" class="item">Image</a>
+            <a href="./input.html" class="item">Input</a>
+            <a href="./navbar.html" class="item">Navbar</a>
+            <a href="./rating.html" class="item">Ratings</a>
+            <a href="./toast.html" class="item">Snackbar</a>
+            <a href="./typography.html" class="item">Typography</a>
+        </div>
+    </div>
+    <div class="main-container-components">
+        <h2 class="heading">Navbar</h2>
+        <p class="description">Navbars are one of the most important part of a website. Here user will find the
+            links/buttons where he want to go or access easily.</p>
+        <h3 class="heading heading-avatar">Navbar on Top</h3>
+        <p class="description description-avatar">Its a normal navbar which we generally use in our sites. We keep some
+            links and our logo on it. You can include <span class="colored-text">nav</span> class as
+            shown below. </p>
+        <iframe class="code-snippet-display"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=base16-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=82px&dsblur=100px&wc=true&wa=true&pv=27px&ph=22px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520%2520Simple%2520Navbar%2520--%253E%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cnav%2520class%253D%2522navbar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522left-nav%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522..%252Findex.html%2522%2520class%253D%2522nav%2520nav-logo%2522%253EFAST%2520UI%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522small-text%2522%253EV%25201.0%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522right-nav%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522list%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%253Ca%2520href%253D%2522..%252Findex.html%2522%2520class%253D%2522nav%2520nav-pills%2522%253EHome%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%253Ca%2520href%253D%2522.%252Favatar.html%2522%2520class%253D%2522nav%2520right-nav-active%2520nav-pills%2522%253EDocumentation%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%253Ca%2520href%253D%2522.%252Finstallation.html%2522%2520class%253D%2522nav%2520nav-pills%2522%253EInstallation%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fnav%253E"
+            sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <div class="badge_container-main">
+            <nav class="navbar">
+                <div class="left-nav">
+                    <a href="../index.html" class="nav nav-logo">FAST UI</a>
+                    <span class="small-text">V 1.0</span>
+                </div>
+                <div class="right-nav">
+                    <ul class="list">
+                        <li><a href="../index.html" class="nav nav-pills">Home</a></li>
+                        <li><a href="./avatar.html" class="nav right-nav-active nav-pills">Documentation</a></li>
+                        <li><a href="./installation.html" class="nav nav-pills">Installation</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
 </body>
+
 </html>

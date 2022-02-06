@@ -1,0 +1,40 @@
+.rating-container{
+    direction: rtl;
+}
+
+.rating-container input{
+    display: none;
+}
+
+.rating-container label{
+    display: inline-block;
+    width: 3rem;
+    position: relative;
+    cursor: pointer;
+    color: var(--text-color-black);
+}
+
+.rating-container label:before{
+    content: "\2605";
+    position: absolute;
+    font-size: 3rem;
+    top: 0;
+    left: 0;
+}
+
+.rating-container label:after{
+    content: "\2605";
+    position: absolute;
+    font-size: 3rem;
+    top: 0;
+    left: 0;
+    color: var(--primary-color);
+    opacity: 0;
+}
+
+.rating-container label:hover:after,
+.rating-container label:hover ~ label:after,
+.rating-container input:checked ~ label:after{
+    opacity: 1;
+}
+
