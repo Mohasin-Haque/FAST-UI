@@ -1,0 +1,43 @@
+.toast-container{
+    background-color: var(--text-color-black);
+    color: var(--body-background-color);
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    margin: 1rem;
+    width: fit-content;
+    border-radius: 0.6rem;
+}
+
+.toast-text{
+    margin-right: 1rem;
+    font-size: bold;
+}
+
+.retry{
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.retry:hover{
+    color: var(--hover-color);
+}
+
+.toast-icon{
+    cursor: pointer;
+}
+
+.toast-icon:hover{
+    color: var(--hover-color);
+}
+
+.undo{
+    margin-left: 2rem;
+    margin-right: 1.8rem;
+}
+
+.toast-actions{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
