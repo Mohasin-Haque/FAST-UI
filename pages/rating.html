@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohasin Haque">
+    <meta name="description" content="Looking up ratings for the cards.. Here you go.">
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>Rating | FAST UI</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="left-nav">
+                <a href="../index.html" class="nav nav-logo">FAST UI</a>
+                <span class="small-text">V 1.0</span>
+            </div>
+            <div class="right-nav">
+                <ul class="list">
+                    <li><a href="../index.html" class="nav nav-pills">Home</a></li>
+                    <li><a href="./avatar.html" class="nav right-nav-active nav-pills">Documentation</a></li>
+                    <li><a href="./installation.html" class="nav nav-pills">Installation</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="sidebar">
+        <div class="items">
+            <p class="subtext">Components</p>
+            <a href="./avatar.html" class="item">Avatar</a>
+            <a href="./alert.html" class="item">Alert</a>
+            <a href="./badge.html" class="item">Badges</a>
+            <a href="./button.html" class="item">Button</a>
+            <a href="./card.html" class="item">Card</a>
+            <a href="./dialogue.html" class="item">Dialogue</a>
+            <a href="./image.html" class="item">Image</a>
+            <a href="./input.html" class="item">Input</a>
+            <a href="./rating.html" class="item">Ratings</a>
+            <a href="./toast.html" class="item">Snackbar</a>
+            <a href="./typography.html" class="item">Typography</a>
+        </div>
+    </div>
+
+
+    <div class="main-container-components">
+        <h2 class="heading">Rating</h2>
+        <p class="description">Ratings provide insight regarding others' opinions and experiences, and can allow the
+            user to submit a rating of their own.
+        </p>
+        <h3 class="heading heading-avatar">Rating Stars</h3>
+        <p class="description description-avatar">A rating stars is used to give ratings to product image, product name,
+            company name,
+            description of products, some buttons and icons. You can use <span class="colored-text">
+                rating-container</span> etc. classes as
+            shown below. </p>
+        <iframe class="code-snippet-display"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=base16-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=82px&dsblur=100px&wc=true&wa=true&pv=27px&ph=22px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520%2520Rating%2520Stars%2520--%253E%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522rating-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522rating%2522%2520id%253D%2522star-1%2522%253E%253Clabel%2520for%253D%2522star-1%2522%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522rating%2522%2520id%253D%2522star-2%2522%253E%253Clabel%2520for%253D%2522star-2%2522%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522rating%2522%2520id%253D%2522star-3%2522%253E%253Clabel%2520for%253D%2522star-3%2522%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522rating%2522%2520id%253D%2522star-4%2522%253E%253Clabel%2520for%253D%2522star-4%2522%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522rating%2522%2520id%253D%2522star-5%2522%253E%253Clabel%2520for%253D%2522star-5%2522%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <div class="flex-center alert-center">
+            <div class="rating-container">
+                <input type="radio" name="rating" id="star-1"><label for="star-1"></label>
+                <input type="radio" name="rating" id="star-2"><label for="star-2"></label>
+                <input type="radio" name="rating" id="star-3"><label for="star-3"></label>
+                <input type="radio" name="rating" id="star-4"><label for="star-4"></label>
+                <input type="radio" name="rating" id="star-5"><label for="star-5"></label>
+            </div>
+        </div>
+
+</body>
+
+</html>

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Mohasin Haque" />
-    <meta name="description" content="Want some samples of snacbars?? Explore this page to get one."/>
+    <meta name="description" content="Want some samples of snacbars?? Explore this page to get one." />
     <link rel="icon" href="https://img.icons8.com/ios-glyphs/50/000000/fast-track.png" />
     <link rel="stylesheet" href="../styles/main.css">
     <title>Snackbar | FAST UI</title>
@@ -39,7 +39,9 @@
             <a href="./dialogue.html" class="item">Dialogue</a>
             <a href="./image.html" class="item">Image</a>
             <a href="./input.html" class="item">Input</a>
+            <a href="./rating.html" class="item">Ratings</a>
             <a href="./toast.html" class="item">Snackbar</a>
+            <a href="./typography.html" class="item">Typography</a>
         </div>
     </div>
 
@@ -75,22 +77,21 @@
                 <div class="retry undo">UNDO</div>
                 <div class="toast-icon">X</div>
             </div>
-            </div>
-            
-            <!-- Stacked -->
-            <h3 class="heading heading-avatar">Stacked Snackbar</h3>
-            <p class="description description-avatar">Snackbars with stacked link. You can use <span
-                    class="colored-text">
-                    toast-container</span> for toast layout and for components use <span class="colored-text">
-                    toast-text,
-                    retry, toast-icon</span> etc. classes as
-                shown below. </p>
+        </div>
 
-            <iframe class="code-snippet-display"
-                src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=base16-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=82px&dsblur=100px&wc=true&wa=true&pv=27px&ph=22px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520Stacked%2520Toast%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-text%2522%253EThis%2520item%2520already%2520has%2520the%2520label%2520%2522travel%2522.%2520You%2520can%2520add%2520a%2520new%2520label.%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522retry%2522%253EADD%2520A%2520NEW%2520LABEL%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-icon%2522%253EX%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
-                sandbox="allow-scripts allow-same-origin">
-            </iframe>
-            <div class="badge_container-main flex-center">
+        <!-- Stacked -->
+        <h3 class="heading heading-avatar">Stacked Snackbar</h3>
+        <p class="description description-avatar">Snackbars with stacked link. You can use <span class="colored-text">
+                toast-container</span> for toast layout and for components use <span class="colored-text">
+                toast-text,
+                retry, toast-icon</span> etc. classes as
+            shown below. </p>
+
+        <iframe class="code-snippet-display"
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=base16-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=82px&dsblur=100px&wc=true&wa=true&pv=27px&ph=22px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520Stacked%2520Toast%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-text%2522%253EThis%2520item%2520already%2520has%2520the%2520label%2520%2522travel%2522.%2520You%2520can%2520add%2520a%2520new%2520label.%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522retry%2522%253EADD%2520A%2520NEW%2520LABEL%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-icon%2522%253EX%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <div class="badge_container-main flex-center">
             <div class="toast-container">
                 <div class="toast-text">This item already has the label "travel". You can add a new label.</div>
                 <div class="actions">
