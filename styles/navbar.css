@@ -1,0 +1,174 @@
+.navbar-responsive {
+  padding: 1rem;
+  background-color: var(--body-background-color);
+  color: var(--text-color-black);
+  box-shadow: var(--box-shadow-down);
+  padding: 0.3rem 1.2rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: var(--text-color-black);
+  text-decoration: none;
+}
+
+.menu li {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.9rem 0.3rem;
+}
+
+.menu li a {
+  display: block;
+}
+
+.logo a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+/* Mobile Menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle {
+  order: 1;
+}
+
+.item.button {
+  order: 2;
+}
+
+.item {
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+}
+
+
+.item.active {
+  display: block;
+}
+
+.toggle {
+  cursor: pointer;
+}
+
+.bars {
+  background: var(--hover-color);
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  width: 1.1rem;
+}
+
+.bars::before,
+.bars::after {
+  background: var(--hover-color);
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: absolute;
+  width: 1.1rem;
+}
+
+.bars::before {
+  top: 0.3rem;
+}
+
+.bars::after {
+  top: -0.3rem;
+}
+
+/* Tablet Menu */
+@media all and (min-width: 468px) {
+  .menu {
+    justify-content: center;
+  }
+
+  .logo {
+    flex: 1;
+  }
+
+  .item.button {
+    width: auto;
+    order: 1;
+    display: block;
+  }
+
+  .toggle {
+    order: 2;
+  }
+
+  .button.secondary {
+    border: 0;
+  }
+
+  .button a {
+    text-decoration: none;
+    padding: 0.4rem 0.9rem;
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 50em;
+  }
+
+  .button.secondary a {
+    background: transparent;
+  }
+
+  .button a:hover {
+    transition: all 0.25s;
+  }
+
+  /* not pseudo class:- anything that is not the class of secondary a:hover and change the background */
+
+  .button:not(.secondary) a:hover {
+    background: var(--secondary-color);
+    border-color: var(--hover-color);
+  }
+
+  .button.secondary a:hover {
+    color: var(--hover-color);
+  }
+}
+
+@media all and (min-width: 768px) {
+  .item {
+    display: block;
+    width: auto;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .logo {
+    order: 0;
+  }
+
+  .item {
+    order: 1;
+  }
+
+  .button {
+    order: 2;
+  }
+
+  .menu li {
+    padding: 0.9rem 0.6rem;
+  }
+
+  .menu li.button {
+    padding-right: 0;
+  }
+}
