@@ -9,7 +9,10 @@
 @import url("../styles/dialogue.css");
 @import url("../styles/image.css");
 @import url("../styles/input.css");
+@import url("../styles/navbar.css");
+@import url("../styles/rating.css");
 @import url("../styles/toast.css");
+@import url("../styles/typography.css");
 
 * {
   margin: 0;

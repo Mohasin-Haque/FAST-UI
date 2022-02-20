@@ -40,7 +40,9 @@
             <a href="./image.html" class="item">Image</a>
             <a href="./input.html" class="item">Input</a>
             <a href="./navbar.html" class="item">Navbar</a>
+            <a href="./rating.html" class="item">Ratings</a>
             <a href="./toast.html" class="item">Snackbar</a>
+            <a href="./typography.html" class="item">Typography</a>
         </div>
     </div>
     <div class="main-container-components">
@@ -90,15 +92,14 @@
                 <input class="input input-error" type="text">
             </div>
         </div>
-        <!-- checkbox -->
-        <h3 class="heading heading-avatar">Checkbox</h3>
-        <p class="description description-avatar">Checkboxes provides an extra option to user to select one or more then
-            one item from a set. It is generally used where we need multiple option. <span class="colored-text"></span>
+        <!-- Radio -->
+        <h3 class="heading heading-avatar">Radio Input</h3>
+        <p class="description description-avatar">Radioes provides an extra option to user to select one item from a set. It is generally used where we need multiple option. <span class="colored-text"></span>
             class as
             shown below. </p>
         <iframe class="code-snippet-display"
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=base16-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=82px&dsblur=100px&wc=true&wa=true&pv=27px&ph=22px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520Checkbox%2520Input%2520--%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522radio-checked%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522radio-checked%2522%2520name%253D%2522radio%2522%2520type%253D%2522radio%2522%2520checked%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Checked%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522radio-unchecked%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522radio-unchecked%2522%2520name%253D%2522radio%2522%2520type%253D%2522radio%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Unchecked%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522radio-disabled%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522radio-disabled%2522%2520name%253D%2522radio%2522%2520type%253D%2522radio%2522%2520disabled%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Disabled%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
-            transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C59%2C48%2C1%29&t=base16-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=82px&dsblur=100px&wc=true&wa=true&pv=27px&ph=22px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--%2520Radio%2520Input%2520--%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522radio-checked%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522radio-checked%2522%2520name%253D%2522radio%2522%2520type%253D%2522radio%2522%2520checked%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Checked%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522radio-unchecked%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522radio-unchecked%2522%2520name%253D%2522radio%2522%2520type%253D%2522radio%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Unchecked%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522radio-disabled%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522radio-disabled%2522%2520name%253D%2522radio%2522%2520type%253D%2522radio%2522%2520disabled%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Disabled%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+            sandbox="allow-scripts allow-same-origin">
         </iframe>
         <div class="badge_container-main flex-center">
             <label for="radio-checked">
