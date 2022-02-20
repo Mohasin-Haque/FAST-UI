@@ -60,7 +60,7 @@ code .
 <table align="center">
     <tbody>
         <tr>
-            <td align="center"><a href="https://github.com/Ayan-thecodeking"><img alt="" src="https://avatars.githubusercontent.com/Mohasin-Haque" width="100px;"><br><sub><b> Mohasin Haque </b></sub></a></td>
+            <td align="center"><a href="https://github.com/Mohasin-Haque"><img alt="" src="https://avatars.githubusercontent.com/Mohasin-Haque" width="100px;"><br><sub><b> Mohasin Haque </b></sub></a></td>
             <td align="right">
                 <p><a href="https://twitter.com/mohasin_haque"><img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white"></a></p>
                 <p><a href="https://www.linkedin.com/in/mohasin-haque-759786200/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"></a></p>
