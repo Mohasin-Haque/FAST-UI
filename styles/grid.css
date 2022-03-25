@@ -1,0 +1,24 @@
+.grid-two{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: var(--status-idle);
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.grid-three{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--status-idle);
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.grid-item{
+    height: 5rem;
+    margin: 1rem;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+}
