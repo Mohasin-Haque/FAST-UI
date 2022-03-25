@@ -1,0 +1,11 @@
+.text-grey{
+    color: grey;
+}
+
+.text-small{
+    font-size: 0.8rem;
+}
+
+.text-centered{
+    text-align: center;
+}
